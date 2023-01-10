@@ -1,0 +1,5 @@
+<img [src]="user.photo">
+<input type="text" [(ngModel)] = "user.quote">
+<p>{{user.name}} {{user.firstName}}</p>
+<p *ngIf = "visibility">{{user.age}}</p>
+<button (click) = "cacheAge()">Clear age</button>
